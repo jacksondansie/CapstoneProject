@@ -1,0 +1,44 @@
+CREATE TABLE IF NOT EXISTS Users
+(
+    id_num INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name TEXT,
+    last_name TEXT,
+    phone_number TEXT,
+    email TEXT UNIQUE NOT NULL,
+    password TEXT NOT NULL,
+    active INTEGER DEFAULT 1,
+    date_created TEXT,
+    hire_date TEXT,
+    user_type TEXT NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS Competencies
+(
+    id_num INTEGER PRIMARY KEY,
+    name TEXT,
+    date_created TEXT
+
+);
+
+CREATE TABLE IF NOT EXISTS Assessments
+(
+    id_num INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT,
+    date_created TEXT
+
+    
+);
+
+CREATE TABLE IF NOT EXISTS Assessment_Results
+(
+    id_num INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER,
+    assessment TEXT,
+    score INTEGER,
+    date_taken TEXT,
+    manager_id INTEGER,
+    FOREIGN KEY (user_id) REFERENCES Users(id_num),
+    FOREIGN KEY (assessment) REFERENCES Competencies(id_num),
+    FOREIGN KEY (manager_id) REFERENCES Users(id_num)
+    
+);

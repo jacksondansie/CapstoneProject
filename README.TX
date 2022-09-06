@@ -1,0 +1,28 @@
+Welcome to the Competency Tracking Tool!
+
+LOGIN FOR ADMIN
+----------------
+NAME - SUPERADMIN
+EMAIL - 0
+PASSWORD - 0
+*Be sure to update your email and password when you first log on.
+
+The Competency Tracking Tool is broken up into many different menus,
+the user will be required to enter numbers from 1-5 to navigate the different menus.
+
+The Competency Tracking Tool has different features for both User and Manager Accounts
+
+Users can:
+View their own competency and assessment data.
+They may also change their personal info.
+
+Managers can:
+View all users in a list, by competency level, and list of assessments.
+Add new users, competencies, assessments, and assessments results.
+Edit a user's info, competencies, assessment, assessment results.
+Delete an assessment results.
+Export reports to CSV.
+Import reports from CSV. 
+
+For any questions please reach out to jackson@devpipeline.com
+Thank you!
